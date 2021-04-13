@@ -7,3 +7,27 @@
 Or discard git command and add `rand = ...` to `~/.gitconfig` in `[alias]` section.
 
 Then test with `git rand`.
+
+## Colors for git prompt
+
+Put these directly into your `~/.gitconfig` file.
+
+```
+[color]
+    branch = auto
+    diff = auto
+    status = auto
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = blue
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = green
+```
